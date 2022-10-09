@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  nginx:
+    image: nginx:1-alpine
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./nginx/common:/usr/share/nginx/html/common
+    ports:
+      - "3000:3000"
+    depends_on:
+      - layout
+      - body
+      - header
+
+  layout:
+    build: ./layout
+    ports:
+      - "3003:3003"
+
+  body:
+    build: ./body
+    ports:
+      - "3002:3002"
+
+  header:
+    build: ./header
+    ports:
+      - "3001:3001"
