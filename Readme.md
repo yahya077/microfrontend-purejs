@@ -1,3 +1,8 @@
+### Micro-Frontend SSR Admin Panel
+
+<img width="1430" alt="Screen Shot 2022-10-09 at 12 16 21" src="https://user-images.githubusercontent.com/46659611/194749389-af404d82-5935-4932-b5fe-508a76966dcd.png">
+
+
 ## 🚀&nbsp; Setup
 
 ```
